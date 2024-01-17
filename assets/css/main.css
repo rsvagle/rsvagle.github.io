@@ -41,6 +41,27 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 1em 0;
 }
 
+.btn-primary{
+	background-color: #c44f4f;
+	border-color: #b94747;
+}
+
+.btn-primary:active{
+	background-color: #c44f4f;
+	border-color: #b94747;
+}
+
+.btn-primary:hover{
+	background-color: #c44f4f;
+	border-color: #b94747;
+}
+
+.btn-primary:focus{
+	background-color: #c44f4f;
+	border-color: #b94747;
+	box-shadow: 0 0 0 0.25rem rgba(233, 83, 57, 0.5)
+}
+
 /* Image */
 .image {
 	border-radius: 0.35em;
