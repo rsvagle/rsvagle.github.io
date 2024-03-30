@@ -8,8 +8,8 @@
 
 #main > section {
     border-top: solid 2px #efefef;
-    margin: 4em 0 0 0;
-    padding: 4em 0 0 0;
+    margin: 2em 0 0 0;
+    padding: 2em 0 0 0;
 }
 
 #main > section:first-child {
@@ -36,6 +36,11 @@ body.is-touch .poptrox-popup .nav-next,
 body.is-touch .poptrox-popup .nav-previous,
 body.is-touch .poptrox-popup .closer {
     opacity: 1.0 !important;
+}
+
+#recentProjects .img-thumbnail{
+    height: 300px;
+    object-fit: cover;
 }
 
 /* Large */

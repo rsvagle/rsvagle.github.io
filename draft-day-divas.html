@@ -43,16 +43,52 @@
 	<div id="main" class="pt-3">
 		<a class="btn btn-primary mb-3" href="./index.html" role="button">Back</a>
 
-		<img src="images/thumbs/DDDScreen.png" alt="Calculator" style="width:100%;">
+		<div id="dddCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+			<!-- Indicators -->
+			<div class="carousel-indicators" style="margin-bottom:0;">
+				<button type="button" data-bs-target="#dddCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#dddCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#dddCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-bs-interval="3000">
+					<img src="images/dddhomefull2.jpg" alt="vs4" style="width:100%;">
+				</div>
+				<div class="carousel-item" data-bs-interval="3000">
+					<img src="images/DDDNews.png" alt="vs1" style="width:100%;">
+				</div>
+				<div class="carousel-item" data-bs-interval="8000">
+					<img src="images/DDDRankings.png" alt="vs2" style="width:100%;">
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#dddCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#dddCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			  </button>
+		</div>
 
 		<!-- Two -->
 		<section id="two" style="margin-top: 1rem; padding-top: 1rem;">
-			<a href="https://github.com/rsvagle/DraftDayDivasBE" class="btn btn-primary" target="_blank" style="float: right;"><i
-					class="bi bi-code-slash me-2"></i>See the code!</a>
+			<div class="d-flex justify-content-end">
+				See the code: 
+				<a href="https://github.com/rsvagle/DraftDayDivasBE" class="btn btn-primary ms-2 me-2" target="_blank"><i
+						class="bi bi-code-slash me-2"></i>Backend</a>
+				<a href="https://github.com/rsvagle/DraftDayDivas" class="btn btn-primary" target="_blank"><i
+					class="bi bi-code-slash me-2"></i>Frontend</a>
+			</div>
 			<h1>Draft Day Divas</h1>
 			<p>
-				This is a project that hosts a world of football players that's complete with stats, game logs, teams, etc. This was my first project using Django
-				and my long term intention is to do the projections using a machine learning model. 
+				Draft Day Divas is a project that hosts a world of fantasy football players that's complete with stats, game logs, teams, etc. 
+				The source code consists of an Angular frontend and my first Django backend project. 
+				My long term intention is to create a machine learning model to evaluate weekly statistics and make a prediction for a player's fantasy score in the next week. 
 			</p>
 		</section>
 	</div>
